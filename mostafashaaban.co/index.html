@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- 
+    MAIN HTML FILE - index.html
+    This is the structure of your website. It contains no styling or JavaScript,
+    only the content and layout structure.
+    
+    TO EDIT CONTENT: Look for text between HTML tags (like <h1>Your Text Here</h1>)
+    TO ADD NEW SECTIONS: Copy existing section blocks and modify
+-->
+
+<html lang="en">
+<head>
+    <!-- 
+        HEAD SECTION - Meta information and links
+        Edit the title tag below to change browser tab text
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- EDIT THIS: Browser tab title -->
+    <title>Mostafashaaban.co - Premium Furniture</title>
+    
+    <!-- Favicons - Browser tab icons -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    
+    <!-- 
+        CSS LINK - Connects to your styles file
+        If you move style.css, update this path
+    -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 
+        NAVIGATION BAR - Fixed at top
+        Edit company name in the logo div below
+    -->
+    <nav id="navbar">
+        <!-- EDIT THIS: Company name in top left -->
+        <div class="logo">Mostafashaaban.co</div>
+        
+        <!-- Navigation links -->
+        <div class="nav-links">
+            <!-- EDIT THIS: Change link text or add more links -->
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+        </div>
+    </nav>
+
+    <!-- 
+        HERO SECTION - Full screen slideshow at top
+        Edit the h1 text for main headline
+    -->
+    <section class="hero" id="home">
+        <!-- 
+            BACKGROUND SLIDESHOW IMAGES
+            These rotate every 4 seconds
+            To change images: Update the src paths or add more divs
+        -->
+        <div class="hero-bg active" style="background-image: url('assets/images/hero/hero1.jpg');"></div>
+        <div class="hero-bg" style="background-image: url('assets/images/hero/hero2.jpg');"></div>
+        <div class="hero-bg" style="background-image: url('assets/images/hero/hero3.jpg');"></div>
+        
+        <!-- Dark overlay for text readability -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Hero text content -->
+        <div class="hero-content">
+            <!-- EDIT THIS: Main headline text -->
+            <h1>Furniture that<br>Everyone<br>Loves</h1>
+        </div>
+    </section>
+
+    <!-- 
+        SECTION TABS - Buttons to switch between Modern/Classical
+        Edit button text below
+    -->
+    <div class="section-tabs" id="collection">
+        <!-- 
+            TAB BUTTONS
+            onclick="switchTab('modern')" calls JavaScript function
+            class="active" shows which tab is currently selected
+        -->
+        <button class="tab-btn active" onclick="switchTab('modern')">Modern Collection</button>
+        <button class="tab-btn" onclick="switchTab('classical')">Classical Collection</button>
+    </div>
+
+    <!-- 
+        MODERN SECTION - Shows modern furniture
+        This section is visible by default (class="active")
+    -->
+    <section class="products-section active" id="modern-section">
+        <!-- Sidebar with description -->
+        <div class="who-we-are">
+            <!-- EDIT THIS: Section title -->
+            <h2>Modern Collection</h2>
+            
+            <!-- 
+                EDIT THIS: Section description
+                contenteditable="true" means you can click and edit directly on website
+            -->
+            <p contenteditable="true" id="modern-desc">
+                Contemporary designs featuring clean lines, innovative materials, and functional elegance. 
+                Our modern collection combines steel, glass, and premium woods to create sophisticated 
+                living spaces for the modern home.
+            </p>
+            
+            <!-- Arrow button to scroll to products -->
+            <button class="arrow-btn" onclick="document.getElementById('modern-grid').scrollIntoView({behavior: 'smooth'})">»</button>
+        </div>
+
+        <!-- Product grid - JavaScript fills this automatically -->
+        <div class="products-grid" id="modern-grid"></div>
+    </section>
+
+    <!-- 
+        CLASSICAL SECTION - Shows classical furniture
+        Hidden by default (no class="active")
+    -->
+    <section class="products-section" id="classical-section">
+        <div class="who-we-are">
+            <!-- EDIT THIS: Section title -->
+            <h2>Classical Collection</h2>
+            
+            <!-- EDIT THIS: Section description -->
+            <p contenteditable="true" id="classical-desc">
+                Timeless elegance crafted with traditional techniques and premium materials. 
+                Our classical collection features intricate woodwork, marble accents, and luxurious 
+                finishes that bring sophistication and heritage to your home.
+            </p>
+            
+            <button class="arrow-btn" onclick="document.getElementById('classical-grid').scrollIntoView({behavior: 'smooth'})">»</button>
+        </div>
+
+        <!-- Product grid - JavaScript fills this automatically -->
+        <div class="products-grid" id="classical-grid"></div>
+    </section>
+
+    <!-- 
+        CONTACT SECTION - Email and phone
+        Edit contact information below
+    -->
+    <section class="contact-section" id="contact">
+        <!-- EDIT THIS: Section title -->
+        <h2>Get in Touch</h2>
+        
+        <div class="contact-links">
+            <!-- 
+                EMAIL LINK
+                mailto: opens user's email app
+                EDIT: Change email address after mailto:
+            -->
+            <a href="mailto:imostafa39@yahoo.com" class="contact-item">
+                <span class="contact-icon">✉</span>
+                <span class="contact-text">imostafa39@yahoo.com</span>
+            </a>
+            
+            <!-- 
+                PHONE LINK
+                tel: opens user's phone app
+                EDIT: Change phone number after tel:
+            -->
+            <a href="tel:+201222103757" class="contact-item">
+                <span class="contact-icon">📞</span>
+                <span class="contact-text">+20 122 210 3757</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 
+        FOOTER - Copyright text
+        Edit year and company name
+    -->
+    <footer>
+        <!-- EDIT THIS: Copyright text -->
+        © Mostafashaaban.co Systems B.V. 1990 - 2025
+    </footer>
+
+    <!-- 
+        PRODUCT MODAL - Popup window for product details
+        Hidden by default, shown when product is clicked
+        JavaScript controls this
+    -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <!-- Close button (X) -->
+            <button class="modal-close" onclick="closeModal()">×</button>
+            
+            <!-- Left side: Image gallery -->
+            <div class="modal-gallery">
+                <div class="main-image">
+                    <img src="" alt="Product Image" id="mainImg">
+                </div>
+                <div class="thumbnail-strip" id="thumbnailStrip"></div>
+            </div>
+            
+            <!-- Right side: Product details -->
+            <div class="modal-details">
+                <h2 id="modalTitle">Product Name</h2>
+                <p id="modalDesc">Product description goes here...</p>
+                <div class="specs">
+                    <h4>Specifications</h4>
+                    <ul id="modalSpecs"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        JAVASCRIPT LINK - Connects to your JavaScript file
+        Placed at bottom so HTML loads first
+        If you move main.js, update this path
+    -->
+    <script src="js/main.js"></script>
+</body>
+</html>
