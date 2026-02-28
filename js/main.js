@@ -18,13 +18,13 @@
 // Array of hero background image paths
 // EDIT THIS: Add or change hero images here
 const heroImages = [
-    'assets\images\hero\dining-table-with-blue-chairs.jfif',
-    'assets\images\hero\living-room-with-steel-frames-as-library.jfif',
-    'assets\images\hero\marble-bathroom.jfif',
-    'assets\images\hero\marble-buffet-and-kitchen-counter.jfif',
-    'assets\images\hero\Modernbed.jfif',
-    'assets\images\hero\room-with-wooden-cupboards-and-sliding-door-into-bathroom.jfif',
-    'assets\images\hero\tv-with-library.jfif',
+    'assets/images/hero/dining-table-with-blue-chairs.jfif',
+    'assets/images/hero/living-room-with-steel-frames-as-library.jfif',
+    'assets/images/hero/marble-bathroom.jfif',
+    'assets/images/hero/marble-buffet-and-kitchen-counter.jfif',
+    'assets/images/hero/Modernbed.jfif',
+    'assets/images/hero/room-with-wooden-cupboards-and-sliding-door-into-bathroom.jfif',
+    'assets/images/hero/tv-with-library.jfif',
 ];
 
 // Current slide index (starts at 0)
@@ -73,7 +73,7 @@ const modernProducts = [
     {
         id: 1,  // Unique ID number
         name: "Industrial Living Room Unit",  // Product name
-        mainImage: "assets\images\products\modern\industrial-living-room-unit.jpg",  // Main photo path
+        mainImage: "assets/images/products/modern/industrial-living-room-unit.jpg",  // Main photo path
         gallery: ["assets/images/products/modern/modern-1.jpg"],  // Gallery photos (array)
         description: "Stunning industrial-style living room featuring a black metal frame shelving unit with integrated LED lighting. The design includes a modern fireplace with marble base, perfect for contemporary open-concept spaces.",  // Full description
         specs: [  // Specifications list (array of strings)
@@ -85,7 +85,7 @@ const modernProducts = [
     {
         id: 2,
         name: "Contemporary Dining Set",
-        mainImage: "assets\images\products\modern\dining-table-with-blue-chairs.jfif",
+        mainImage: "assets/images/products/modern/dining-table-with-blue-chairs.jfif",
         gallery: ["assets/images/products/modern/modern-2.jpg"],
         description: "Elegant dining area featuring a round glass-top table with solid wood base and luxurious navy blue velvet chairs. The built-in oak wall unit provides ample storage while maintaining a sleek, minimalist aesthetic.",
         specs: [
@@ -97,7 +97,7 @@ const modernProducts = [
     {
         id: 3,
         name: "Modern Master Bedroom",
-        mainImage: "assets\images\products\modern\Modernbed.jfif",
+        mainImage: "assets/images/products/modern/Modernbed.jfif",
         gallery: ["assets/images/products/modern/modern-3.jpg"],
         description: "Sophisticated bedroom design with floor-to-ceiling wood paneling, integrated nightstands, and hidden storage. The grey upholstered bed features a tall headboard with built-in shelving and ambient lighting.",
         specs: [
@@ -110,7 +110,7 @@ const modernProducts = [
     {
         id: 4,
         name: "Minimalist TV Lounge",
-        mainImage: "assets\images\products\modern\tv-with-library.jfif",
+        mainImage: "assets/images/products/modern/tv-with-library.jfif",
         gallery: ["assets/images/products/modern/modern-4.jpg"],
         description: "Clean-lined entertainment wall featuring vertical wood slat paneling, floating TV mount, and symmetrical metal shelving units. The design creates a focal point while maintaining minimalist elegance.",
         specs: [
@@ -122,7 +122,7 @@ const modernProducts = [
     {
         id: 5,
         name: "Smart Bedroom Cabinet",
-        mainImage: "assets\images\products\modern\room-with-wooden-cupboards-and-sliding-door-into-bathroom.jfif",
+        mainImage: "assets/images/products/modern/room-with-wooden-cupboards-and-sliding-door-into-bathroom.jfif",
         gallery: ["assets/images/products/modern/modern-5.jpg"],
         description: "Innovative bedroom solution featuring a rotating TV cabinet that conceals the screen when not in use. Includes integrated vanity desk and sliding door system leading to the en-suite bathroom.",
         specs: [
@@ -134,7 +134,7 @@ const modernProducts = [
     {
         id: 6,
         name: "Luxury Master Bathroom",
-        mainImage: "assets\images\products\modern\marble-bathroom.jfif",
+        mainImage: "assets/images/products/modern/marble-bathroom.jfif",
         gallery: ["assets/images/products/modern/modern-6.jpg"],
         description: "Spa-like bathroom featuring book-matched marble walls, double vanity with dark wood cabinets, and frameless glass shower enclosure. The design emphasizes natural light and premium materials.",
         specs: [
@@ -146,7 +146,7 @@ const modernProducts = [
     {
         id: 7,
         name: "Contemporary Marble Kitchen",
-        mainImage: "assets\images\products\modern\marble-buffet-and-kitchen-counter.jfif",
+        mainImage: "assets/images/products/modern/marble-buffet-and-kitchen-counter.jfif",
         gallery: ["assets/images/products/modern/modern-7.jpg"],
         description: "Contemporary kitchen featuring a massive marble island with waterfall edges, and custom cabinetry. The circular mirror and pendant lighting add artistic elements to the functional space.",
         specs: [
@@ -158,7 +158,7 @@ const modernProducts = [
     {
         id: 8,
         name: "Contemporary Guest Bathroom",
-        mainImage: "assets\images\products\modern\contemporary-guest-bathroom.jpg",
+        mainImage: "assets/images/products/modern/contemporary-guest-bathroom.jpg",
         gallery: ["assets/images/products/modern/modern-8.jpg"],
         description: "Compact yet luxurious bathroom featuring vertical wood slat walls, backlit mirror, and floating vanity. The glass shower enclosure maximizes space while maintaining an open feel.",
         specs: [
@@ -171,7 +171,7 @@ const modernProducts = [
     {
         id: 9,
         name: "Brass & Wood Coffee Table",
-        mainImage: "assets\images\products\modern\brass-and-wood-coffee-table.jpg",
+        mainImage: "assets/images/products/modern/brass-and-wood-coffee-table.jpg",
         gallery: ["assets/images/products/modern/modern-9.jpg"],
         description: "Artisan coffee table featuring a two-tier design with natural wood top and brushed brass lower shelf. The geometric form creates visual interest while providing functional display space.",
         specs: [
@@ -190,7 +190,7 @@ const classicalProducts = [
     {
         id: 101,
         name: "Grand Marble Staircase",
-        mainImage: "assets\images\products\classical\grand-marble-staircase.jpg",
+        mainImage: "assets/images/products/classical/grand-marble-staircase.jpg",
         gallery: ["assets/images/products/classical/classical-2.jpg"],
         description: "Magnificent staircase featuring Crema Marfil marble steps with black granite inlay borders. The wrought iron railing with scrollwork design and mahogany handrail adds timeless elegance.",
         specs: [
@@ -203,7 +203,7 @@ const classicalProducts = [
     {
         id: 102,
         name: "Grand Entry Hall",
-        mainImage: "assets\images\products\classical\grand-entry-hall.jpg",
+        mainImage: "assets/images/products/classical/grand-entry-hall.jpg",
         gallery: ["assets/images/products/classical/classical-6.jpg"],
         description: "Impressive double-door entry with marble flooring featuring intricate inlay patterns. The coffered ceiling, wall sconces, and classic armchair create a welcoming yet formal reception area.",
         specs: [
@@ -216,7 +216,7 @@ const classicalProducts = [
     {
         id: 103,
         name: "Neoclassical Console Table",
-        mainImage: "assets\images\products\classical\neoclassical-console-table.jpg",
+        mainImage: "assets/images/products/classical/neoclassical-console-table.jpg",
         gallery: ["assets/images/products/classical/classical-7.jpg"],
         description: "Hand-carved mahogany console table with cabriole legs and glass top display surface. Paired with an antique landscape painting in a gilded frame, perfect for entryways or formal living spaces.",
         specs: [
